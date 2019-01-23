@@ -17,7 +17,7 @@ i=0
 with open('Members_Copy.json', 'w') as newFile:
     while(i < len(jsonObj)):
         jsonObj[i]["Age"] = calculate_age(datetime.strptime(jsonObj[i]["DOB"], '%Y-%m-%d'))
-        print(jsonObj[i])
+        #print(jsonObj[i])
         i += 1
     json.dump(jsonObj, newFile, indent=4)
-#testing changes
+print("Result file created")
