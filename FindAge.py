@@ -20,4 +20,4 @@ with open('Members_Copy.json', 'w') as newFile:
         #print(jsonObj[i])
         i += 1
     json.dump(jsonObj, newFile, indent=4)
-print("Result file created, please check the specific folder")
+print("Result file created, please check the folder")
